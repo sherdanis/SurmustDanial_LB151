@@ -39,11 +39,13 @@ Tier 4: MySQL
 
 ✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
 
+"Als Spieler möchte ich mein Passwort zurücksetzen können, damit ich mein Konto nicht löschen muss."
 "Als Administrator möchte ich ein mich einloggen können mit meinem Benutzername als auch Passwort, damit ich Änderungen vornehmen kann."
-"Als Spieler möchte ich mein Konto speicher können, damit ich meine Daten für das nächste Mal sehen kann."
+"Als Spieler möchte ich mein Konto speichern können, damit ich meine Daten für das nächste Mal sehen kann."
 "Als Spieler möchte ich die Highscoreliste sehen, damit ich mich zwischen meinen Kompanen vergleichen kann."
 "Als Administrator möchte ich die Fragen ansehen können, damit ich etwas ändern kann, falls es nicht stimmt."
-"Als Spieler möchte ich das Spiel beenden."
+"Als Spieler möchte ich das Spiel beenden, damit ich etwas anderes machen kann."
+"Als Spieler möchte ich den Background ändern, sodass ich auch bei dunkleren/helleren Lichtverhältnissen weiter Spielen kann."
 
 ✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
 
@@ -53,23 +55,26 @@ Tier 4: MySQL
 | ...  | 
 | 2    |       Muss      | Qualität | Als ein Spieler möchte ich die Funktion von Passwort vergessen ausnützen können, damit ich mich wieder 
                                       einloggen kann, falls ich das Passwort vergesse.                                                             |
-| 3    | Kann            | Rand     | Als ein Spieler möchte ich die Funktion von Darkmode als auch Whitemode ausnützen können, damit ich auch in
+| 3    |       Kann      | Rand     | Als ein Spieler möchte ich die Funktion von Darkmode als auch Whitemode ausnützen können, damit ich auch in
                                       der Dunkelheit spielen kann.                                                                                 |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
 # 4.2 Testfälle
 
-| TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
-| ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| TC-№ | Vorbereitung        | Eingabe                                | Erwartete Ausgabe                               |
+| ---- | ------------        | -------                                | -----------------                               |
+| 2.1  | Applikation starten | Passwort Vergessen                     | Ein Link wurde an ihrer E-Mail Adresse geschickt|
+| 2.1  | Applikation starten | Link öffnen, neues Passwort eingeben   | Passwort erfolgreich zurückgesetzt              |
+| 3.6  | Applikation starten | Button mit Symbol Sonne/Mond betätigen | Background ändert sich                          |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 # 5 Prototyp
 
 ✍️ Erstellen Sie Prototypen für das GUI (Admin-Interface und Quiz-Seite).
+<img width="358" alt="image" src="https://user-images.githubusercontent.com/112334791/212046734-70693d0b-8a2c-400f-b6e8-89f0eda4bb9a.png">
+
 
 # 6 Implementation
 
