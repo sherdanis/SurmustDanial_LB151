@@ -38,6 +38,7 @@ Tier 4: MySQL
 # 4.1 User Stories
 
 ✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
+
 "Als Administrator möchte ich ein mich einloggen können mit meinem Benutzername als auch Passwort, damit ich Änderungen vornehmen kann."
 "Als Spieler möchte ich mein Konto speicher können, damit ich meine Daten für das nächste Mal sehen kann."
 "Als Spieler möchte ich die Highscoreliste sehen, damit ich mich zwischen meinen Kompanen vergleichen kann."
